@@ -6,6 +6,7 @@ var port = process.env.PORT || 7500;
 
 app.use(express.json());
 app.set('view engine', 'ejs');
+app.use('/', express.static('dist'));
 app.get('/', function (req, res) {
 
   var resultData = {};

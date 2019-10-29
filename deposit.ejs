@@ -10,24 +10,29 @@
      
     <title>Deposit Calculator</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
+  <%
+    var deposit = {};
+    var intallment = {};
+    var cma = {};
 
-  [예금, 이율 (0.1 %)] 신한은행 입출금 : <br>
-  [예금, 이율 (4.0 %)] 신한은행 한달애 (愛) : <br>
-  [예금, 이율 (0.1 %)] 신한은행 청약 통장 : <br>
-  
-  [예금, 이율 (2.7 %)] 카카오뱅크 자유적금 예금화 : <br>
-  [예금, 이율 (2.5 %)] 웰컴저축은행 입출금 : <br>
-  [예금, 이율 (2.0 %)] 사이다뱅크 입출금 : <br>
-  [적금, 이율 (10.0 %)] 사이다뱅크 적금 : <br>
+    deposit.sinhanBank = {};
+    deposit.sinhanBank.normal = 150000;
+    deposit.sinhanBank.handalA = 300000;
+    deposit.sinhanBank.chungYak = 320000;
+  %>
 
-  [CMA, 이율 (3.65 %)] 한화투자증권 CMA : <br>
+    총 자산 : <span id="Total_Balance"></span><br>
+    연 수익 : <span id="Total_Year_Interest"></span><br>
+    월 수익 : <span id="Total_Month_Interest"></span><br>
 
-
-  총 자산 : <br>
-  연 수익 : <br>
-  월 수익 : <br>
-
+    <div id="DepositGrid" class="ag-theme-material" style="height: 500px;"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-enterprise@21.2.1/dist/ag-grid-enterprise.min.js"></script>
+    <script src="js/grid.js"></script>
 </body>
 </html>
