@@ -72,7 +72,7 @@ var DepositCol = [
   {
     headerName: "잔액", field: "Balance",
     cellRenderer: function (params) {
-      return numeral(params.data.Balance).format('0,0');
+      return numeral(params.data.Balance).format('0,0') + ' 원';
     }
   },
   {
@@ -92,7 +92,7 @@ var DepositCol = [
           result = resultValue;
           break;
       }
-      return numeral(result).format('0,0');
+      return numeral(result).format('0,0') + ' 원';
     }
   },
   {
@@ -112,7 +112,7 @@ var DepositCol = [
           result = resultValue;
           break;
       }
-      return numeral(result / 12).format('0,0');
+      return numeral(result / 12).format('0,0') + ' 원';
     }
   },
 ];
