@@ -8,6 +8,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
 
+  // Git 변경
   // res.render('../min1.ejs', resultData);
   res.send('test');
 
