@@ -1,0 +1,30 @@
+{
+  "name": "deposit",
+  "version": "1.0.0",
+  "description": "예금 적금 이율 계산기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swpaek77/Deposit.git"
+  },
+  "keywords": [
+    "예금",
+    "적금",
+    "이율",
+    "계산기"
+  ],
+  "author": "Seungwoo Paek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swpaek77/Deposit/issues"
+  },
+  "homepage": "https://github.com/swpaek77/Deposit#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  }
+}
